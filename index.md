@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/LunaMultiplayer/LunaMultiplayer/blob/master/External/logo.png" alt="Luna multiplayer logo"/>
+    <img src="https://github.com/LunaMultiplayer/LunaMultiplayer/blob/master/External/logo.png?raw=true" alt="Luna multiplayer logo"/>
     <a href="https://www.youtube.com/watch?v=gf6xyLnpnoM"><img src="https://img.youtube.com/vi/gf6xyLnpnoM/0.jpg" alt="Video" height="187" width="250"/></a>
 </p>
 
@@ -53,8 +53,10 @@ Please check the [wiki](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki)
 
 Check how many servers are up and running either in [Release](../../wiki/How-to-get-the-latest-version-of-LMP) or in [Nightly](../../wiki/How-to-get-nightly-builds) versions
 
-| [Release servers](http://dagger.ole32.com:8701/servers) | [Nightly servers](http://dagger.ole32.com:8751) |
+| Release | Nightly
 | ------------------------------------------------------  | ------------------------------------------------------- |
+| [Release servers](http://dagger.ole32.com:8701/servers) | [Nightly servers](http://dagger.ole32.com:8751) |
+
 ---
 
 ### Status:
