@@ -29,7 +29,7 @@
 
 ### Main features:
 
-- Clean and optimized code, based on systems and windows which makes it easier to read and modify.
+- Clean and optimized code.
 - Multi threaded.
 - [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) protocol to sync the time between clients and the server.
 - [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) based using the [Lidgren](https://github.com/lidgren/lidgren-network-gen3) library for reliable UDP message handling.
