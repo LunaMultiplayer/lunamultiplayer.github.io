@@ -55,6 +55,7 @@ Check how many servers are up and running either in [Release](../../wiki/How-to-
 
 | [Release servers](http://dagger.ole32.com:8701/servers) | [Nightly servers](http://dagger.ole32.com:8751) |
 | ------------------------------------------------------  | ------------------------------------------------------- |
+
 ---
 
 ### Status:
