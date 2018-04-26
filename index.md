@@ -29,22 +29,22 @@
 
 ### Main features:
 
-- [x] Clean and optimized code, based on systems and windows which makes it easier to read and modify.
-- [x] Multi threaded.
-- [x] [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) protocol to sync the time between clients and the server.
-- [x] [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) based using the [Lidgren](https://github.com/lidgren/lidgren-network-gen3) library for reliable UDP message handling.
-- [x] [Interpolation](http://www.gabrielgambetta.com/entity-interpolation.html) so the vessels won't jump when there are bad network conditions.
-- [x] Multilanguage.
-- [x] [Nat-punchtrough](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Master-server) feature so a server doesn't need to open ports on it's router.
-- [x] Servers displayed within the mod.
-- [x] Settings saved as XML.
-- [x] [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) support for servers and [master servers](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Master-server)
-- [x] Better creation of network messages so they are easier to modify and serialize.
-- [x] Every network message is cached in order to reduce the garbage collector spikes.
-- [x] Based on tasks instead of threads.
-- [x] Supports career and science modes.
-- [ ] [QuickLZ](http://www.quicklz.com) for fast compression.
-- [ ] Support for groups/companies inside career and science modes.
+- Clean and optimized code, based on systems and windows which makes it easier to read and modify.
+- Multi threaded.
+- [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) protocol to sync the time between clients and the server.
+- [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) based using the [Lidgren](https://github.com/lidgren/lidgren-network-gen3) library for reliable UDP message handling.
+- [Interpolation](http://www.gabrielgambetta.com/entity-interpolation.html) so the vessels won't jump when there are bad network conditions.
+- Multilanguage.
+- [Nat-punchtrough](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Master-server) feature so a server doesn't need to open ports on it's router.
+- Servers displayed within the mod.
+- Settings saved as XML.
+- [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play) support for servers and [master servers](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Master-server)
+- Better creation of network messages so they are easier to modify and serialize.
+- Every network message is cached in order to reduce the garbage collector spikes.
+- Based on tasks instead of threads.
+- Supports career and science modes.
+- [QuickLZ](http://www.quicklz.com) for fast compression.
+- Support for groups/companies inside career and science modes.
 
 Please check the [wiki](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki) to see how to [build](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-compile-LMP), [run](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-play-with-LMP.) or [debug](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Debugging-in-Visual-studio) LMP
 
@@ -55,7 +55,6 @@ Check how many servers are up and running either in [Release](../../wiki/How-to-
 
 | [Release servers](http://dagger.ole32.com:8701/servers) | [Nightly servers](http://dagger.ole32.com:8751) |
 | ------------------------------------------------------  | ------------------------------------------------------- |
-
 ---
 
 ### Status:
