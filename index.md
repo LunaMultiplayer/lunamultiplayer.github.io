@@ -13,7 +13,7 @@
 ---
 
 <p align="center">
-  <a href="https://github.com/LunaMultiplayer/LunaMultiplayer/releases/latest"><img src="https://github.com/LunaMultiplayer/LunaMultiplayer/blob/master/External/downloadIcon.png?raw=true" alt="Download" height="70" width="250"/></a>
+  <a href="https://github.com/LunaMultiplayer/LunaMultiplayer/releases/latest"><img src="https://github.com/LunaMultiplayer/LunaMultiplayer/blob/master/External/downloadIcon.png?raw=true" alt="Download" height="64" width="225"/></a>
   <a href="https://github.com/LunaMultiplayer/LunaMultiplayer/wiki"><img src="https://github.com/LunaMultiplayer/LunaMultiplayer/blob/master/External/documentationIcon.png?raw=true" alt="Documentation" height="64" width="250"/></a>
 </p>
 
