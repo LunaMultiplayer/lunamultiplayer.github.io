@@ -32,21 +32,13 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          {{ site.github.latest_release }}
-          {{ site.github.latest_release.assets }}
-          {{ site.github.latest_release.assets[0] }}
-          {{ site.github.latest_release.assets[0].browser_download_url }}
           {{ content }}
         </section>
 
         <aside id="sidebar">
           {% if site.show_downloads %}
-            <a href="{{ site.github.latest_release.assets[0].browser_download_url }}" class="button">
-              <small>Download DEBUG</small>
-              Latest LMP
-            </a>
-            <a href="{{ site.github.latest_release.assets[1].browser_download_url }}" class="button">
-              <small>Download RELEASE</small>
+            <a href="{{ site.github.repo_url }}/releases/latest" class="button">
+              <small>Download</small>
               Latest LMP
             </a>
             <a href="{{ site.github.repo_url }}/wiki" class="button">
