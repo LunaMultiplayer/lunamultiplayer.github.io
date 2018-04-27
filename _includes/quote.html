@@ -18,14 +18,6 @@ function getQuote(){
 			author = "--" + jsonp.author;
 			$(".quote").html(quote);
 			$(".author").html(author);
-			
-			$(".tweet").attr({
-				href: 'https://twitter.com/intent/tweet?text=' + encodeURIComponent('"' + quote + '" ' + author)
-				});
-				
-			$(".page").css({
-   			backgroundImage: 'url(https://placem.at/things?random=' + Math.floor(Math.random()*1000) + ')'		
-  			});
 		}});
 }		
 
