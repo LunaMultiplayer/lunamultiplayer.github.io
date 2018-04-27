@@ -32,6 +32,10 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
+          {{ site.github.latest_release }}
+          {{ site.github.latest_release.assets }}
+          {{ site.github.latest_release.assets[0] }}
+          {{ site.github.latest_release.assets[0].browser_download_url }}
           {{ content }}
         </section>
 
