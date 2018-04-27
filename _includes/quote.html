@@ -8,6 +8,19 @@ function getQuote(){
 	var request = "https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json?callback=respond" + rand;	
 	//var request = "https://quotes.stormconsultancy.co.uk/random.json?callback=respond" + rand;
 	
+	let loadPosts = function () {
+		let xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if (this.readyState === 4 && this.status === 200) {
+				let response = JSON.parse(this.responseText);
+				renderPosts(response);    
+			}
+		}
+		xhr.open("GET", request);
+		xhr.setRequestHeader("Accept", 'application/json');
+		xhr.send();
+	}
+	
 	$.ajaxPrefilter(function(options) {
 	  if(options.crossDomain && jQuery.support.cors) {
 		var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
