@@ -3,10 +3,6 @@
 
 ---
 
-*[Official KSP forum post](https://forum.kerbalspaceprogram.com/index.php?/topic/168271-131-luna-multiplayer-lmp-alpha/)*
-
-*[Latest build updater](https://github.com/LunaMultiplayer/LunaMultiplayerUpdater)*
-
 ### Main features:
 
 - Clean and optimized code.
