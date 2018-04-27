@@ -34,7 +34,7 @@
 <!--- - [QuickLZ](http://www.quicklz.com) for fast compression. --->
 <!--- - Support for groups/companies inside career and science modes. --->
 
-Please check the [wiki](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki) to see how to [build](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-compile-LMP), [run](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-play-with-LMP.) or [debug](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Debugging-in-Visual-studio) LMP
+Please check the [wiki](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki) to see how to [build](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-compile-LMP), [run](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-play-with-LMP.), [debug](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Debugging-in-Visual-studio) or [troubleshoot](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Troubleshooting) LMP
 
 ---
 ### Servers:
@@ -44,12 +44,6 @@ Check how many servers are up and running either in [Release](https://github.com
 | Release | Nightly
 | ------------------------------------------------------  | ------------------------------------------------------- |
 | [Release servers](http://dagger.ole32.com:8701) | [Nightly servers](http://dagger.ole32.com:8751) |
-
----
-
-### Troubleshooting:
-
-Please visit [this page](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Troubleshooting) in the wiki to solve the most common issues with LMP
 
 ---
 
