@@ -37,8 +37,12 @@
 
         <aside id="sidebar">
           {% if site.show_downloads %}
-            <a href="{{ site.github.repo_url }}/releases/latest" class="button">
-              <small>Download</small>
+            <a href="{{ site.github.latest_release.assets[0].browser_download_url }}" class="button">
+              <small>Download DEBUG</small>
+              Latest LMP
+            </a>
+            <a href="{{ site.github.latest_release.assets[1].browser_download_url }}" class="button">
+              <small>Download RELEASE</small>
               Latest LMP
             </a>
             <a href="{{ site.github.repo_url }}/wiki" class="button">
