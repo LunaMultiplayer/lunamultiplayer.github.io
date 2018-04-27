@@ -31,8 +31,8 @@
 - Every network message is cached in order to reduce the garbage collector spikes.
 - Based on tasks instead of threads.
 - Supports career and science modes.
-- [QuickLZ](http://www.quicklz.com) for fast compression.
-- Support for groups/companies inside career and science modes.
+<!--- - [QuickLZ](http://www.quicklz.com) for fast compression. --->
+<!--- - Support for groups/companies inside career and science modes. --->
 
 Please check the [wiki](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki) to see how to [build](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-compile-LMP), [run](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-play-with-LMP.) or [debug](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Debugging-in-Visual-studio) LMP
 
