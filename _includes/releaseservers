@@ -1,0 +1,14 @@
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>	
+	$.ajaxPrefilter(function(options) {
+	  if(options.crossDomain && jQuery.support.cors) {
+		var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
+		options.url = "https://cors-anywhere.herokuapp.com/" + options.url;
+	  }
+	});
+
+	$.get('https://cors-anywhere.herokuapp.com/http://dagger.ole32.com:8701/json',
+		function(response) {
+			console.log(response)
+	});	
+</script>
