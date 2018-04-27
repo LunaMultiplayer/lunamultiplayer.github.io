@@ -33,6 +33,9 @@
       <div class="inner clearfix">
         <section id="main-content">
           {{ content }}
+          <footer>
+            {% include quote.html %}
+          </footer>
         </section>
 
         <aside id="sidebar">
@@ -55,8 +58,5 @@
         </aside>
       </div>
     </div>
-    <footer>
-    {% include quote.html %}
-    </footer>
   </body>
 </html>
