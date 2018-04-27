@@ -2,12 +2,9 @@
 var quote = "";
 var author = "";
 
-function getQuote(){
-	
+function getQuote(){	
 	var rand = Math.floor(Math.random()*1000);
-	var request = "https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json";
-	//var request = "https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json?callback=respond" + rand;	
-	//var request = "https://quotes.stormconsultancy.co.uk/random.json?callback=respond" + rand;
+	var request = "https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json";	
 	
 	let xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function() {
@@ -22,40 +19,10 @@ function getQuote(){
 	}
 	xhr.open("GET", request);
 	xhr.setRequestHeader("Accept", 'application/json');
-	xhr.send();
-	
-	$.ajaxPrefilter(function(options) {
-	  if(options.crossDomain && jQuery.support.cors) {
-		var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
-		options.url = "https://cors-anywhere.herokuapp.com/" + options.url;
-	  }
-	});
-	
-	$.get(request, function(response) {
-		var jsonp = JSON.stringify(response);  // Convert to json
-		console.log(jsonp);
-		quote = '"' + jsonp.quote + '"';
-		author = "--" + jsonp.author;
-		$(".quote").html(quote);
-		$(".author").html(author);
-	});
-	
-	$.ajax({
-		dataType: "jsonp",
-		url: request,
-		data: "",	
-		success: function (jsonp) {
-			console.log(jsonp);
-			quote = '"' + jsonp.quote + '"';
-			author = "--" + jsonp.author;
-			$(".quote").html(quote);
-			$(".author").html(author);
-	}});
+	xhr.send();	
 }		
 
-$(document).ready(function() {
-	getQuote();
-});
+$(document).ready(function() {	getQuote(); });
 </script>
 
 <div class="quote" align="center"></div>
