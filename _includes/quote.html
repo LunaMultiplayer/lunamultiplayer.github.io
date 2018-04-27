@@ -24,7 +24,17 @@ function getQuote(){
 		$(".author").html(author);
 	});
 	
-
+	$.ajax({
+		dataType: "jsonp",
+		url: request,
+		data: "",	
+		success: function (jsonp) {
+			console.log(jsonp);
+			quote = '"' + jsonp.quote + '"';
+			author = "--" + jsonp.author;
+			$(".quote").html(quote);
+			$(".author").html(author);
+	}});
 }		
 
 $(document).ready(function() {
