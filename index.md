@@ -1,12 +1,9 @@
 ---
 ---
-<p align="center">
-    <img src="https://github.com/LunaMultiplayer/LunaMultiplayer/blob/master/External/logo.png?raw=true" alt="Luna multiplayer logo"/>
-    <a href="https://www.youtube.com/watch?v=gf6xyLnpnoM"><img src="https://img.youtube.com/vi/gf6xyLnpnoM/0.jpg" alt="Video" height="187" width="250"/></a>
-</p>
 
 <p align="center">
     <a href="https://paypal.me/gavazquez"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal"/></a>
+    <a href="https://www.youtube.com/watch?v=gf6xyLnpnoM"><img src="https://img.shields.io/badge/Youtube-Video-red.svg" alt="Youtube video"/></a>
     <a href="https://discord.gg/S6bQR5q"><img src="https://img.shields.io/discord/378456662392045571.svg" alt="Chat on discord"/></a>
     <a href="https://github.com/LunaMultiplayer/LunaMultiplayer/releases"><img src="https://img.shields.io/github/release/lunamultiplayer/lunamultiplayer.svg" alt="Latest release" /></a>
     <a href="https://github.com/LunaMultiplayer/LunaMultiplayer/releases"><img src="https://img.shields.io/github/downloads/lunamultiplayer/lunamultiplayer/total.svg" alt="Total downloads" /></a>
