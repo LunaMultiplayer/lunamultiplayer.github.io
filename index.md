@@ -46,11 +46,11 @@ Please check the [wiki](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki)
 ---
 ### Servers:
 
-Check how many servers are up and running either in [Release](../../wiki/How-to-get-the-latest-version-of-LMP) or in [Nightly](../../wiki/How-to-get-nightly-builds) versions
+Check how many servers are up and running either in [Release](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-get-the-latest-version-of-LMP) or in [Nightly](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-get-nightly-builds) versions
 
 | Release | Nightly
 | ------------------------------------------------------  | ------------------------------------------------------- |
-| [Release servers](http://dagger.ole32.com:8701/servers) | [Nightly servers](http://dagger.ole32.com:8751) |
+| [Release servers](http://dagger.ole32.com:8701) | [Nightly servers](http://dagger.ole32.com:8751) |
 
 ---
 
