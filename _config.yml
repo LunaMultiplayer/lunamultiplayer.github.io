@@ -3,3 +3,4 @@ theme: jekyll-theme-architect
 google_analytics: UA-118330229-1
 title: Luna multiplayer
 description: Multiplayer mod for KSP
+show_downloads: true
