@@ -5,7 +5,8 @@ var author = "";
 
 function getQuote(){
 	var rand = Math.floor(Math.random()*1000);
-	var request = "https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json?callback=respond" + rand;	
+	//var request = "https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json?callback=respond" + rand;	
+	var request = "https://quotes.stormconsultancy.co.uk/random.json?callback=respond" + rand;	
 	console.log(request);
 	$.ajax({
   		dataType: "jsonp",
