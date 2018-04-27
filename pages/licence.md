@@ -1,10 +1,9 @@
 ---
-layout: page
+layout: default
 title: LMP Licence
 ---
 
-<p align="center">
-    MIT License
+MIT License
 
 Copyright (c) 2016 Gabriel Vazquez
 
@@ -25,11 +24,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-</p>
-
----
-
-<p align="center">
-  <a href="mailto:gavazquez@gmail.com"><img src="https://img.shields.io/badge/email-gavazquez@gmail.com-blue.svg?style=flat" alt="Email: gavazquez@gmail.com" /></a>
-  <a href="https://github.com/LunaMultiplayer/LunaMultiplayer/blob/master//LICENSE"><img src="https://img.shields.io/github/license/lunamultiplayer/LunaMultiPlayer.svg" alt="License" /></a>
-</p>
