@@ -1,29 +1,37 @@
-<script>	
-	$.ajaxPrefilter(function(options) {
-	  if(options.crossDomain && jQuery.support.cors) {
-		var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
-		options.url = "https://cors-anywhere.herokuapp.com/" + options.url;
-	  }
-	});
-
-	$.get('https://cors-anywhere.herokuapp.com/http://dagger.ole32.com:8701/json',
-		function(response) {
-			var html = '<table class="table table-striped">';
-		    	html += '<tr>';
-		    	var flag = 0;
-			$.each(response[0], function(index, value){
-				html += '<th>'+index+'</th>';
-			});
-			html += '</tr>';
-			$.each(response, function(index, value){
-				html += '<tr>';
-				$.each(value, function(index2, value2){
-					html += '<td>'+value2+'</td>';
-				});
-				html += '<tr>';
-			});
-			html += '</table>';
-			$('.table').html(html);    
+<script>
+	function parseServers(json){
+		var html = '<table class="table table-striped">';
+		html += '<tr>';
+		var flag = 0;
+		$.each(json[0], function(index, value){
+			html += '<th>'+index+'</th>';
 		});
+		html += '</tr>';
+		$.each(json, function(index, value){
+			html += '<tr>';
+			$.each(value, function(index2, value2){
+				html += '<td>'+value2+'</td>';
+			});
+			html += '<tr>';
+		});
+		html += '</table>';
+		$('.table').html(html);
+	}
+	
+	function getServers(){	
+		let request = "https://cors-anywhere.herokuapp.com/http://dagger.ole32.com:8701/json";	
+		let xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if (this.readyState === 4 && this.status === 200) {
+				var response = JSON.parse(this.responseText);
+				parseServers(response);
+			}
+		}
+		xhr.open("GET", request);
+		xhr.setRequestHeader("Accept", 'application/json');
+		xhr.send();	
+	}		
+
+	$(document).ready(function() {	getServers(); });
 </script>
 <div class="table" align="center"></div>
