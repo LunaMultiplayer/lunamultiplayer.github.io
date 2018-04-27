@@ -59,11 +59,9 @@ Check how many servers are up and running either in [Release](../../wiki/How-to-
 
 ---
 
-### Status:
+### Troubleshooting:
 
-|   Branch   |   Build  |   Tests  |  Last commit  |   Activity    |    Commits    |
-| ---------- | -------- | -------- | ------------- | ------------- | ------------- |
-| **master** |[![AppVeyor](https://img.shields.io/appveyor/ci/gavazquez/lunamultiplayer/master.svg?logo=appveyor)](https://ci.appveyor.com/project/gavazquez/lunamultiplayer/branch/master) | [![AppVeyor Tests](https://img.shields.io/appveyor/tests/gavazquez/lunamultiplayer/master.svg?logo=appveyor)](https://ci.appveyor.com/project/gavazquez/lunamultiplayer/branch/master/tests) | [![Last commit](https://img.shields.io/github/last-commit/lunamultiplayer/lunamultiplayer/master.svg)](https://github.com/LunaMultiplayer/LunaMultiplayer/commits/master) | [![Commit activity](https://img.shields.io/github/commit-activity/y/lunamultiplayer/lunamultiplayer.svg)](https://github.com/LunaMultiplayer/LunaMultiplayer/commits/master) | [![Commits since release](https://img.shields.io/github/commits-since/lunamultiplayer/lunamultiplayer/latest.svg)](https://github.com/LunaMultiplayer/LunaMultiplayer/commits/master)
+Please visit [this page](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Troubleshooting) in the wiki to solve the most common issues with LMP
 
 ---
 
@@ -76,12 +74,6 @@ Please write the code as you were going to leave it, return after 1 year and you
 It's **very** important that the code is clean and documented so in case someone leaves, another programmer could take and maintain it. Bear in mind that **nobody** likes to take a project where it's code looks like a dumpster.
 
 There's also a test project in case you want to add tests to your code.
-
----
-
-### Troubleshooting:
-
-Please visit [this page](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Troubleshooting) in the wiki to solve the most common issues with LMP
 
 ---
 
