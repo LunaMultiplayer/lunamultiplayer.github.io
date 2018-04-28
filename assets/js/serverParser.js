@@ -1,5 +1,18 @@
 function ignoreIndex(index){
-	if (index == 0 || index == 1 || index >= 3 && index <= 5 || index >= 15) {
+	if (index == "Id" || 
+	    index == "InternalEndpoint" || 
+	    index == "ServerVersion" ||
+	    index == "DisplayedPing" ||
+	    index == "Ping" ||
+	    index == "WebsiteText" ||
+	    index == "WarpMode" ||
+	    index == "TerrainQuality" ||
+	    index == "VesselUpdatesSendMsInterval" ||
+	    index == "SecondaryVesselUpdatesSendMsInterval" ||
+	    index == "DropControlOnVesselSwitching" ||
+	    index == "DropControlOnExitFlight" ||
+	    index == "DropControlOnExit" ||
+	    index == "ShowVesselsInThePast") {
 		return true;
 	}
 	return false;
