@@ -1,36 +1,42 @@
+function ignoreIndex(index){
+	if (index == 0 || index == 1 || index >= 3 && index <= 5 || index >= 15) {
+		return true;
+	}
+	return false;
+}
+
 function parseRows(json){
-    let html = '';
-		$.each(json, function(index, value){
+    	let html = '';
+	$.each(json, function(index, value){
+		if (ignoreIndex(index) == false){				
 			html += '<tr>';
 			$.each(value, function(index2, value2){
 				html += '<td>'+value2+'</td>';
 			});
 			html += '<tr>';
-		});
-    
-    return html;
+		}
+	});
+    	return html;
 }
 
 function parseHeader(json){
-    let html = '';
-		html += '<tr>';
-		$.each(json[0], function(index, value){
+    	let html = '';
+	html += '<tr>';
+	$.each(json[0], function(index, value){
+		if (ignoreIndex(index) == false){
 			html += '<th>'+index+'</th>';
-		});
-		html += '</tr>';
-    
-    return html;
+		}
+	});
+	html += '</tr>';    
+    	return html;
 }
 
-function parseServers(json){
-		let html = '<table class="table table-striped">';
-		
-    html += parseHeader(json);
-		html += parseRows(json, html);
-    
-		html += '</table>';
-    
-    return html;
+function parseServers(json){	
+	let html = '<table class="table table-striped">';		
+    	html += parseHeader(json);
+	html += parseRows(json, html);    
+	html += '</table>';
+	return html;
 }
 
 function getServers(url){	
