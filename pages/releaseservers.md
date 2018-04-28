@@ -3,4 +3,4 @@ layout: default
 title: Release servers
 ---
 
-{% include releaseservers.html %}
+{% include servers.html server_url={{ site.servers.release_url }} %}
