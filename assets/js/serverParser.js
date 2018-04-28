@@ -22,11 +22,29 @@ function parseRows(json){
     	let html = '';
 	$.each(json, function(index, value){	
 		html += '<tr>';
-		$.each(value, function(index2, value2){
-			if (ignoreIndex(index2) == false){
-				html += '<td>'+value2+'</td>';
+		html += '<td>'+value.ExternalEndpoint+'</td>';
+		html += '<td>'+value.Password+'</td>';
+		html += '<td>'+value.ServerName+'</td>';
+		html += '<td>'+value.Description+'</td>';
+		if(value.Website != ''){
+			html += '<a href="' + value.WebsiteText + '">';
+			if(value.WebsiteText != ''){
+				html += value.WebsiteText;
 			}
-		});
+			else{
+				html += 'URL';
+			}
+			html += '</a>';
+		}
+		else{
+			html += '<td></td>';
+		}
+			
+		html += '<td>'+value.GameMode+'</td>';
+		html += '<td>'+value.PlayerCount+'</td>';
+		html += '<td>'+value.MaxPlayers+'</td>';
+		html += '<td>'+value.ModControl+'</td>';
+		html += '<td>'+value.Cheats+'</td>';
 		html += '<tr>';
 	});
     	return html;
@@ -35,11 +53,16 @@ function parseRows(json){
 function parseHeader(json){
     	let html = '';
 	html += '<tr>';
-	$.each(json[0], function(index, value){
-		if (ignoreIndex(index) == false){
-			html += '<th>'+index+'</th>';
-		}
-	});
+	html += '<th>Address</th>';
+	html += '<th>Password</th>';
+	html += '<th>Name</th>';
+	html += '<th>Description</th>';
+	html += '<th>URL</th>';
+	html += '<th>Game Mode</th>';
+	html += '<th>Players</th>';
+	html += '<th>Max players</th>';
+	html += '<th>Mod control</th>';
+	html += '<th>Cheats</th>';
 	html += '</tr>';    
     	return html;
 }
