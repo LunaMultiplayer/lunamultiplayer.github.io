@@ -27,14 +27,14 @@ function parseRows(json){
 		html += '<td>'+value.ServerName+'</td>';
 		html += '<td>'+value.Description+'</td>';
 		if(value.Website != ''){
-			html += '<a href="' + value.WebsiteText + '">';
+			html += '<td><a href="' + value.Website + '">';
 			if(value.WebsiteText != ''){
 				html += value.WebsiteText;
 			}
 			else{
 				html += 'URL';
 			}
-			html += '</a>';
+			html += '</a></td>';
 		}
 		else{
 			html += '<td></td>';
