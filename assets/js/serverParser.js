@@ -15,7 +15,7 @@ function ignoreIndex(index){
 			       "DropControlOnVesselSwitching", "DropControlOnExitFlight", "DropControlOnExit", 
 			       "ShowVesselsInThePast"];
 	
-	return indexesToIgnore.contains(index) || numIndexesToIgnore.contains(index);
+	return indexesToIgnore.contains(index);
 }
 
 function parseRows(json){
