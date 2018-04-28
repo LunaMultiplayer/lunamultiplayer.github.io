@@ -32,3 +32,17 @@ function parseServers(json){
     
     return html;
 }
+
+function getServers(url){	
+	let request = url;	
+	let xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if (this.readyState === 4 && this.status === 200) {
+			var response = JSON.parse(this.responseText);
+			return parseServers(response);
+		}
+	}
+	xhr.open("GET", request);
+	xhr.setRequestHeader("Accept", 'application/json');
+	xhr.send();	
+}
