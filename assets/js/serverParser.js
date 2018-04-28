@@ -1,23 +1,3 @@
-Array.prototype.contains = function(obj) {
-    var i = this.length;
-    while (i--) {
-        if (this[i] === obj) {
-            return true;
-        }
-    }
-    return false;
-}
-
-function ignoreIndex(index){
-	let indexesToIgnore = ["Id", "InternalEndpoint", "ServerVersion", "DisplayedPing", 
-			       "Ping", "WebsiteText", "WarpMode", "TerrainQuality", 
-			       "VesselUpdatesSendMsInterval", "SecondaryVesselUpdatesSendMsInterval", 
-			       "DropControlOnVesselSwitching", "DropControlOnExitFlight", "DropControlOnExit", 
-			       "ShowVesselsInThePast"];
-	
-	return indexesToIgnore.contains(index);
-}
-
 function parseRows(json){
     	let html = '';
 	$.each(json, function(index, value){	
