@@ -1,21 +1,22 @@
+Array.prototype.contains = function(obj) {
+    var i = this.length;
+    while (i--) {
+        if (this[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+}
+
 function ignoreIndex(index){
-	if (index == "Id" || 
-	    index == "InternalEndpoint" || 
-	    index == "ServerVersion" ||
-	    index == "DisplayedPing" ||
-	    index == "Ping" ||
-	    index == "WebsiteText" ||
-	    index == "WarpMode" ||
-	    index == "TerrainQuality" ||
-	    index == "VesselUpdatesSendMsInterval" ||
-	    index == "SecondaryVesselUpdatesSendMsInterval" ||
-	    index == "DropControlOnVesselSwitching" ||
-	    index == "DropControlOnExitFlight" ||
-	    index == "DropControlOnExit" ||
-	    index == "ShowVesselsInThePast") {
-		return true;
-	}
-	return false;
+	let indexesToIgnore = ["Id", "InternalEndpoint", "ServerVersion", "DisplayedPing", 
+			       "Ping", "WebsiteText", "WarpMode", "TerrainQuality", 
+			       "VesselUpdatesSendMsInterval", "SecondaryVesselUpdatesSendMsInterval", 
+			       "DropControlOnVesselSwitching", "DropControlOnExitFlight", "DropControlOnExit", 
+			       "ShowVesselsInThePast"];	
+	let numIndexesToIgnore = [0,1,3,4,5, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+	
+	return indexesToIgnore.contains(index) || numIndexesToIgnore.contains(index);
 }
 
 function parseRows(json){
