@@ -13,22 +13,21 @@ function ignoreIndex(index){
 			       "Ping", "WebsiteText", "WarpMode", "TerrainQuality", 
 			       "VesselUpdatesSendMsInterval", "SecondaryVesselUpdatesSendMsInterval", 
 			       "DropControlOnVesselSwitching", "DropControlOnExitFlight", "DropControlOnExit", 
-			       "ShowVesselsInThePast"];	
-	let numIndexesToIgnore = [0,1,3,4,5, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+			       "ShowVesselsInThePast"];
 	
 	return indexesToIgnore.contains(index) || numIndexesToIgnore.contains(index);
 }
 
 function parseRows(json){
     	let html = '';
-	$.each(json, function(index, value){
-		if (ignoreIndex(index) == false){				
-			html += '<tr>';
-			$.each(value, function(index2, value2){
+	$.each(json, function(index, value){	
+		html += '<tr>';
+		$.each(value, function(index2, value2){
+			if (ignoreIndex(index2) == false){
 				html += '<td>'+value2+'</td>';
-			});
-			html += '<tr>';
-		}
+			}
+		});
+		html += '<tr>';
 	});
     	return html;
 }
