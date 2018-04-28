@@ -1,7 +1,7 @@
 <script src="{{ '/assets/js/serverParser.js' | relative_url }}"></script>
 <script>
 	$(document).ready(function() {	
-		$('.table').html(getServers('https://cors-anywhere.herokuapp.com/http://dagger.ole32.com:8701/json'));
+		getServers('https://cors-anywhere.herokuapp.com/http://dagger.ole32.com:8701/json');
 	});
 </script>
 <div class="table" align="center"></div>
