@@ -6,3 +6,6 @@ description: Multiplayer mod for KSP
 show_downloads: true
 github:
   repo_url: https://github.com/LunaMultiplayer/LunaMultiplayer
+servers:
+  release_url: http://dagger.ole32.com:8701/json
+  debug_url: http://dagger.ole32.com:8751/json
