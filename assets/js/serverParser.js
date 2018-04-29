@@ -20,8 +20,17 @@ function parseRows(json){
 		else{
 			html += '<td></td>';
 		}
-			
-		html += '<td>'+value.GameMode+'</td>';
+		switch (value.GameMode) {
+		    case 0:
+			html += '<td>Sandbox</td>';
+			break;
+		    case 1:
+			html += '<td>Science</td>';
+			break;
+		    case 2:
+			html += '<td>Career</td>';
+			break;
+		}
 		html += '<td>'+value.PlayerCount+'</td>';
 		html += '<td>'+value.MaxPlayers+'</td>';
 		html += '<td>'+value.ModControl+'</td>';
