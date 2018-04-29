@@ -48,9 +48,13 @@ function parseHeader(json){
 }
 
 function parseServers(json){	
-	let html = '<table class="table table-striped">';		
+	let html = '<table class="table tablesorter">';	
+	html += '<thead>'
     	html += parseHeader(json);
-	html += parseRows(json, html);    
+	html += '</thead>'
+	html += '<tbody>'
+	html += parseRows(json, html);
+	html += '</tbody>'
 	html += '</table>';
 	return html;
 }
