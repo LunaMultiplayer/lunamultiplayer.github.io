@@ -52,7 +52,7 @@ function parseHeader(json){
 }
 
 function parseServers(json){	
-	let html = '<table class="tablesorter">';
+	let html = '<table id="serverstable" class="tablesorter">';
     	html += parseHeader(json);
 	html += parseRows(json, html);	
 	html += '</table>';
@@ -65,7 +65,7 @@ function getServers(url){
 	xhr.onreadystatechange = function() {
 		if (this.readyState === 4 && this.status === 200) {
 			var response = JSON.parse(this.responseText);
-			$('.table').html(parseServers(response));
+			$('#serverscontainer').html(parseServers(response));
 		}
 	}
 	xhr.open("GET", request);
