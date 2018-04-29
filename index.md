@@ -31,7 +31,7 @@ Check how many servers are up and running either in [Release](https://github.com
 
 | Release | Nightly
 | ------------------------------------------------------  | ------------------------------------------------------- |
-| [Release servers](http://dagger.ole32.com:8701) | [Nightly servers](http://dagger.ole32.com:8751) |
+| [Release servers](/pages/releaseservers.html) | [Nightly servers](/pages/nightlyservers.html) |
 
 ---
 
