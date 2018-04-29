@@ -1,5 +1,6 @@
 function parseRows(json){
     	let html = '';
+	html += '<tbody>';
 	$.each(json, function(index, value){	
 		html += '<tr>';
 		html += '<td>'+value.ExternalEndpoint+'</td>';
@@ -27,11 +28,13 @@ function parseRows(json){
 		html += '<td>'+value.Cheats+'</td>';
 		html += '<tr>';
 	});
+	html += '</tbody>';
     	return html;
 }
 
 function parseHeader(json){
     	let html = '';
+	html += '<thead>';
 	html += '<tr>';
 	html += '<th>Address</th>';
 	html += '<th>Password</th>';
@@ -43,18 +46,15 @@ function parseHeader(json){
 	html += '<th>Max players</th>';
 	html += '<th>Mod control</th>';
 	html += '<th>Cheats</th>';
-	html += '</tr>';    
+	html += '</tr>';
+	html += '</thead>';
     	return html;
 }
 
 function parseServers(json){	
-	let html = '<table class="table tablesorter">';	
-	html += '<thead>'
+	let html = '<table class="table tablesorter">';
     	html += parseHeader(json);
-	html += '</thead>'
-	html += '<tbody>'
-	html += parseRows(json, html);
-	html += '</tbody>'
+	html += parseRows(json, html);	
 	html += '</table>';
 	return html;
 }
