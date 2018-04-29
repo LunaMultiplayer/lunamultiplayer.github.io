@@ -1,5 +1,5 @@
 $(document).ready(function() 
     { 
-        $(".tablesorter").tablesorter( {sortList: [[5,1], [3,0]]} ); 
+        $("#serverstable").tablesorter( {sortList: [[5,1], [3,0]]} ); 
     } 
 ); 
