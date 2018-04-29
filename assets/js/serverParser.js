@@ -52,7 +52,7 @@ function parseHeader(json){
 }
 
 function parseServers(json){	
-	let html = '<table class="table tablesorter">';
+	let html = '<table class="tablesorter">';
     	html += parseHeader(json);
 	html += parseRows(json, html);	
 	html += '</table>';
