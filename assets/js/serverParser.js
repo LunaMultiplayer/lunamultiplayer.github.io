@@ -75,7 +75,7 @@ function getServers(url){
 		if (this.readyState === 4 && this.status === 200) {
 			var response = JSON.parse(this.responseText);
 			$('#serverscontainer').html(parseServers(response));
-			$("#serverstable").tablesorter( {sortList: [[5,1]]} ); 
+			$("#serverstable").tablesorter( {sortList: [[6,1]]} ); 
 		}
 	}
 	xhr.open("GET", request);
