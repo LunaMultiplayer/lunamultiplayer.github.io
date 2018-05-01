@@ -26,3 +26,8 @@ aside a.button{
 th{
     text-align:center; 
 }
+
+//Bootstrap fix
+a:hover {
+    text-decoration: none;
+}
