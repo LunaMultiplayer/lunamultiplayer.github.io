@@ -73,9 +73,10 @@ function getServers(url){
 	let xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function() {
 		if (this.readyState === 4 && this.status === 200) {
+			$("#waitForServers").remove();
 			var response = JSON.parse(this.responseText);
 			$('#serverscontainer').html(parseServers(response));
-			$("#serverstable").tablesorter( {sortList: [[6,1]]} ); 
+			$("#serverstable").tablesorter( {sortList: [[6,1]]} ); 					
 		}
 	}
 	xhr.open("GET", request);
