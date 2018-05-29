@@ -38,4 +38,4 @@ Check how many servers are up and running either in [Release](https://github.com
 ### Contributing:
 
 Consider [donating trough paypal](https://paypal.me/gavazquez) if you like this project. 
-It will encourage us to do future releases and add new features!
+It will encourage us to do future releases, fix the existing bugs and add new features!
