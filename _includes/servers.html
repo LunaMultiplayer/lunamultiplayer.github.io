@@ -4,7 +4,8 @@
 		getServers('https://cors-anywhere.herokuapp.com/{{ include.server_url }}');
 	});
 </script>
-<div id="waitForServers">
-	<img src="{{ '/assets/gif/wait.gif' | relative_url }}" alt="Please wait" height="280" width="280" style="display: block; margin-left: auto; margin-right: auto;">
+<div id="serverscontainer" style="overflow-y:scroll">
+	<div id="waitForServers">
+	<img src="{{ '/assets/gif/wait.gif' | relative_url }}" alt="Please wait" height="216" width="216" style="display: block; margin-left: auto; margin-right: auto;">
+	</div>
 </div>
-<div id="serverscontainer" style="overflow-y:scroll"></div>
