@@ -22,7 +22,7 @@
 <!--- - [QuickLZ](http://www.quicklz.com) for fast compression. --->
 <!--- - Support for groups/companies inside career and science modes. --->
 
-Please check the [wiki](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki) to see how to [build](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-compile-LMP), [run](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-play-with-LMP.), [debug](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Debugging-in-Visual-studio) or [troubleshoot](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Troubleshooting) LMP
+Please check the [wiki](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki) to see how to [install](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-install-LMP), [run](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-play-with-LMP), [build](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/How-to-compile-LMP), [debug](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Debugging-in-Visual-studio) or [troubleshoot](https://github.com/LunaMultiplayer/LunaMultiplayer/wiki/Troubleshooting) LMP among other things
 
 ---
 ### Servers:
