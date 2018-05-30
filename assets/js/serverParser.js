@@ -3,7 +3,8 @@ function parseRows(json){
 	html += '<tbody>';
 	$.each(json, function(index, value){	
 		html += '<tr>';
-		html += '<td>'+value.ExternalEndpoint+'</td>';
+		html += '<td>'+value.ExternalEndpoint+'</td>';		
+		html += '<td>'+value.Country+'</td>';
 		html += '<td>'+value.Password+'</td>';
 		html += '<td>'+value.ServerName+'</td>';
 		html += '<td>'+value.Description+'</td>';
@@ -46,6 +47,7 @@ function parseHeader(json){
 	html += '<thead>';
 	html += '<tr>';
 	html += '<th>Address</th>';
+	html += '<th>Country</th>';
 	html += '<th>Password</th>';
 	html += '<th>Name</th>';
 	html += '<th>Description</th>';
@@ -76,7 +78,7 @@ function getServers(url){
 			$("#waitForServers").remove();
 			var response = JSON.parse(this.responseText);
 			$('#serverscontainer').html(parseServers(response));
-			$("#serverstable").tablesorter( {sortList: [[6,1]]} ); 					
+			$("#serverstable").tablesorter( {sortList: [[7,1]]} ); 					
 		}
 	}
 	xhr.open("GET", request);
