@@ -3,7 +3,7 @@
 	var author = "";
 
 	function getQuote(){	
-		let request = "https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json";	
+		let request = "https://cors.io/?http://quotes.stormconsultancy.co.uk/random.json";	
 		let xhr = new XMLHttpRequest();
 		xhr.onreadystatechange = function() {
 			if (this.readyState === 4 && this.status === 200) {
