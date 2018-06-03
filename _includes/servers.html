@@ -1,7 +1,7 @@
 <script src="{{ '/assets/js/serverParser.js' | relative_url }}"></script>
 <script>
 	$(document).ready(function() {	
-		getServers('https://cors-anywhere.herokuapp.com/{{ include.server_url }}');
+		getServers('{{ include.server_url }}');
 	});
 </script>
 <div id="serverscontainer" style="overflow-y:auto"></div>
