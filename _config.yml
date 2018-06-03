@@ -9,3 +9,8 @@ github:
 servers:
   release_url: http://dagger.ole32.com:8701/json
   debug_url: http://dagger.ole32.com:8751/json
+
+#Use those url when accessing trough an https website
+#servers:
+#  release_url: https://cors-anywhere.herokuapp.com/http://dagger.ole32.com:8701/json
+#  debug_url: https://cors-anywhere.herokuapp.com/http://dagger.ole32.com:8751/json
