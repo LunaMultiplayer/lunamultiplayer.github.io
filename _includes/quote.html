@@ -2,7 +2,7 @@
 	var quote = "";
 	var author = "";
 		function getQuote(){	
-			var quoteSource = Math.floor(Math.random() * 4);
+			var quoteSource = Math.floor(Math.random() * 3);
 			if(quoteSource === 0) {
 				let request = "https://cors.io/?http://quotes.stormconsultancy.co.uk/random.json";	
 				let xhr = new XMLHttpRequest();
