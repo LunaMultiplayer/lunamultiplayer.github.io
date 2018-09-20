@@ -11,7 +11,7 @@
 						var jsonp = JSON.parse(this.responseText);
 						console.log(jsonp);
 						quote = '&ldquo;' + jsonp.quote + '&rdquo;';
-						author = "--" + jsonp.author;
+						author = "-- " + jsonp.author;
 						$(".quote").html(quote);
 						$(".author").html(author);    
 					}
@@ -40,7 +40,7 @@
 				];
 				var pick = Math.floor(Math.random() * customQuotes.length);
 				quote = '&ldquo;' + customQuotes[pick][0] + '&rdquo;';
-				author = "--" + customQuotes[pick][1];
+				author = "-- " + customQuotes[pick][1];
 				$(".quote").html(quote);
 				$(".author").html(author);   
 			}
