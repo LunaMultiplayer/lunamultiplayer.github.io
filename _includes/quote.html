@@ -1,24 +1,50 @@
 <script>
 	var quote = "";
 	var author = "";
-
-	function getQuote(){	
-		let request = "https://cors.io/?http://quotes.stormconsultancy.co.uk/random.json";	
-		let xhr = new XMLHttpRequest();
-		xhr.onreadystatechange = function() {
-			if (this.readyState === 4 && this.status === 200) {
-				var jsonp = JSON.parse(this.responseText);
-				console.log(jsonp);
-				quote = '"' + jsonp.quote + '"';
-				author = "--" + jsonp.author;
+		function getQuote(){	
+			var quoteSource = Math.floor(Math.random() * 4);
+			if(quoteSource === 0) {
+				let request = "https://cors.io/?http://quotes.stormconsultancy.co.uk/random.json";	
+				let xhr = new XMLHttpRequest();
+				xhr.onreadystatechange = function() {
+					if (this.readyState === 4 && this.status === 200) {
+						var jsonp = JSON.parse(this.responseText);
+						console.log(jsonp);
+						quote = '&ldquo;' + jsonp.quote + '&rdquo;';
+						author = "--" + jsonp.author;
+						$(".quote").html(quote);
+						$(".author").html(author);    
+					}
+				}
+				xhr.open("GET", request);
+				xhr.setRequestHeader("Accept", 'application/json');
+				xhr.send();
+			}
+			else {
+				var customQuotes = [
+				['In ancient Roman religion and myth, Luna is the divine embodiment of the Moon. She is often presented as the female complement of Sol (the Sun) conceived of as a god. Luna is also sometimes represented as an aspect of the Roman triple goddess, along with Proserpina and Hecate.<br>Luna is not always a distinct goddess, but sometimes rather an epithet that specializes a goddess, since both Diana and Juno are identified as moon goddesses.', 'Wikipedia'],
+				
+				['You develop an instant global consciousness, a people orientation, an intense dissatisfaction with the state of the world, and a compulsion to do something about it. From out there on the moon, international politics look so petty.<br>You want to grab a politician by the scruff of the neck and drag him a quarter of a million miles out and say, "Look at that, you son of a bitch."', 'Edgar Mitchell, Apollo 14'],
+				
+				['We live in a world where man has walked on the Moon.<br>It\'s not a miracle; We just decided to go.', 'Jim Lovell'],
+				
+				['Luna is the name of my dog<br>That\'s why I named it Luna multiplayer xD', 'Dagger, LMP Creator'],
+				
+				['I could either watch it happen, or be part of it.', 'Elon Musk'],
+				
+				['It was all going fine until it exploded!', 'Darklight DMP Creator'],
+				
+				['I would like to die on Mars. Just not on impact', 'Elon Musk'],
+				
+				['Pilots take no special joy in walking.<br>Pilots like flying.', 'Neil Armstron, Apollo 11']
+				];
+				var pick = Math.floor(Math.random() * customQuotes.length);
+				quote = '&ldquo;' + customQuotes[pick][0] + '&rdquo;';
+				author = "--" + customQuotes[pick][1];
 				$(".quote").html(quote);
-				$(".author").html(author);    
+				$(".author").html(author);   
 			}
 		}
-		xhr.open("GET", request);
-		xhr.setRequestHeader("Accept", 'application/json');
-		xhr.send();	
-	}		
 
 	$(document).ready(function() {	getQuote(); });
 </script>
