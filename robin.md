@@ -1,3 +1,1 @@
-title: My amazing post
-redirect_to:
-  - http://www.github.com
+<h1>test</h1>
