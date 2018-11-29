@@ -33,7 +33,8 @@ function parseRows(json){
 			break;
 		}
 		html += '<td>'+value.PlayerCount+'</td>';
-		html += '<td>'+value.MaxPlayers+'</td>';
+		html += '<td>'+value.MaxPlayers+'</td>';		
+		html += '<td>'+value.Dedicated+'</td>';
 		html += '<td>'+value.ModControl+'</td>';
 		html += '<td>'+value.Cheats+'</td>';
 		html += '<tr>';
@@ -55,6 +56,7 @@ function parseHeader(json){
 	html += '<th>Game Mode</th>';
 	html += '<th>Players</th>';
 	html += '<th>Max players</th>';
+	html += '<th>Dedicated</th>';
 	html += '<th>Mod control</th>';
 	html += '<th>Cheats</th>';
 	html += '</tr>';
