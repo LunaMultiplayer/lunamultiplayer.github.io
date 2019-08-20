@@ -1,4 +1,6 @@
 function escapeHtml(text) {
+    if (text === undefined) 
+        return "";
     return text.toString()
          .replace(/&/g, "&amp;")
          .replace(/</g, "&lt;")
