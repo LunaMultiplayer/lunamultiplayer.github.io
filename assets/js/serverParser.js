@@ -1,17 +1,26 @@
+function escapeHtml(text) {
+    return text
+         .replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#039;");
+ }
+
 function parseRows(json){
     	let html = '';
 	html += '<tbody>';
 	$.each(json, function(index, value){	
 		html += '<tr>';
-		html += '<td>'+value.ExternalEndpoint+'</td>';		
-		html += '<td>'+value.Country+'</td>';
-		html += '<td>'+value.Password+'</td>';
-		html += '<td>'+value.ServerName+'</td>';
-		html += '<td>'+value.Description+'</td>';
+		html += '<td>'+escapeHtml(value.ExternalEndpoint)+'</td>';		
+		html += '<td>'+escapeHtml(value.Country)+'</td>';
+		html += '<td>'+escapeHtml(value.Password)+'</td>';
+		html += '<td>'+escapeHtml(value.ServerName)+'</td>';
+		html += '<td>'+escapeHtml(value.Description)+'</td>';
 		if(value.Website != ''){
-			html += '<td><a href="' + value.Website + '">';
+			html += '<td><a href="' + escapeHtml(value.Website) + '">';
 			if(value.WebsiteText != ''){
-				html += value.WebsiteText;
+				html += escapeHtml(value.WebsiteText);
 			}
 			else{
 				html += 'URL';
@@ -32,11 +41,11 @@ function parseRows(json){
 			html += '<td>Career</td>';
 			break;
 		}
-		html += '<td>'+value.PlayerCount+'</td>';
-		html += '<td>'+value.MaxPlayers+'</td>';		
-		html += '<td>'+value.Dedicated+'</td>';
-		html += '<td>'+value.ModControl+'</td>';
-		html += '<td>'+value.Cheats+'</td>';
+		html += '<td>'+escapeHtml(value.PlayerCount)+'</td>';
+		html += '<td>'+escapeHtml(value.MaxPlayers)+'</td>';		
+		html += '<td>'+escapeHtml(value.Dedicated)+'</td>';
+		html += '<td>'+escapeHtml(value.ModControl)+'</td>';
+		html += '<td>'+escapeHtml(value.Cheats)+'</td>';
 		html += '<tr>';
 	});
 	html += '</tbody>';
