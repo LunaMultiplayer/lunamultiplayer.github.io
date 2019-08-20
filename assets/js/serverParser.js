@@ -1,5 +1,5 @@
 function escapeHtml(text) {
-    return text
+    return text.toString()
          .replace(/&/g, "&amp;")
          .replace(/</g, "&lt;")
          .replace(/>/g, "&gt;")
