@@ -4,7 +4,7 @@
 		function getQuote(){	
 			var quoteSource = Math.floor(Math.random() * 3);
 			if(quoteSource === 0) {
-				let request = "https://cors.io/?http://quotes.stormconsultancy.co.uk/random.json";	
+				let request = "https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json";	
 				let xhr = new XMLHttpRequest();
 				xhr.onreadystatechange = function() {
 					if (this.readyState === 4 && this.status === 200) {
@@ -18,6 +18,7 @@
 				}
 				xhr.open("GET", request);
 				xhr.setRequestHeader("Accept", 'application/json');
+				xhr.setRequestHeader("x-requested-with", 'LMP');
 				xhr.send();
 			}
 			else {
