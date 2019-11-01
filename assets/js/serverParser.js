@@ -95,6 +95,7 @@ function getServers(url){
 		}
 	}
 	xhr.open("GET", request);
+	xhr.setRequestHeader("origin", 'LMP');
 	xhr.setRequestHeader("Accept", 'application/json');
 	xhr.send();	
 }
