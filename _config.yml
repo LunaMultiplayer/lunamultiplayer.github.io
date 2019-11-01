@@ -7,8 +7,10 @@ show_downloads: true
 github:
   repo_url: https://github.com/LunaMultiplayer/LunaMultiplayer
 servers:  
-  release_url: https://bypasscors.herokuapp.com/api/?url=http://pictocube.ddns.net:8701/json
-  debug_url: https://bypasscors.herokuapp.com/api/?url=http://pictocube.ddns.net:8711/json  
+  release_url: https://cors-anywhere.herokuapp.com/http://pictocube.ddns.net:8701/json
+  debug_url: https://cors-anywhere.herokuapp.com/http://pictocube.ddns.net:8711/json
+  #release_url: https://bypasscors.herokuapp.com/api/?url=http://pictocube.ddns.net:8701/json
+  #debug_url: https://bypasscors.herokuapp.com/api/?url=http://pictocube.ddns.net:8711/json  
   #release_url: https://cors.io/?http://pictocube.ddns.net:8701//json
   #debug_url: https://cors.io/?http://pictocube.ddns.net:8711/json  
   #release_url: https://cors-anywhere.herokuapp.com/http://dagger.ole32.com:8701/json
