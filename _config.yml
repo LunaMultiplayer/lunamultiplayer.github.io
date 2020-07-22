@@ -7,11 +7,9 @@ show_downloads: true
 github:
   repo_url: https://github.com/LunaMultiplayer/LunaMultiplayer
 servers:  
-  release_url: https://cors-anywhere.herokuapp.com/http://lmp.anschuetznet.de:8701/json
-  debug_url: https://cors-anywhere.herokuapp.com/http://lmp.anschuetznet.de:8751/json
-  #release_url: https://bypasscors.herokuapp.com/api/?url=http://pictocube.ddns.net:8701/json
-  #debug_url: https://bypasscors.herokuapp.com/api/?url=http://pictocube.ddns.net:8711/json  
-  #release_url: https://cors.io/?http://pictocube.ddns.net:8701//json
-  #debug_url: https://cors.io/?http://pictocube.ddns.net:8711/json  
-  #release_url: https://cors-anywhere.herokuapp.com/http://dagger.ole32.com:8701/json
-  #debug_url: https://cors-anywhere.herokuapp.com/http://dagger.ole32.com:8751/json
+  #Tekbot
+  release_url: https://cors-anywhere.herokuapp.com/http://212.48.114.221:8701/json
+  debug_url: https://cors-anywhere.herokuapp.com/http://212.48.114.221:8751/json
+  #Angryjoshi
+  #release_url: https://cors-anywhere.herokuapp.com/http://lmp.anschuetznet.de:8701/json
+  #debug_url: https://cors-anywhere.herokuapp.com/http://lmp.anschuetznet.de:8751/json
