@@ -34,6 +34,13 @@ Check how many servers are up and running either in [Release](https://github.com
 | [Release servers](/pages/releaseservers.html) | [Nightly servers](/pages/nightlyservers.html) |
 
 ---
+### Renting Servers:
+
+LMP is currently partnered with StyxNetworks. They provide a low cost minimal effort solution for getting your LMP server online.
+They take care of the hosting and leave the configuration down to you.
+You can access 100% of the LMP files with StyxNetworks and cancel anytime.
+
+---
 
 ### Contributing:
 
