@@ -7,12 +7,18 @@ show_downloads: true
 github:
   repo_url: https://github.com/LunaMultiplayer/LunaMultiplayer
 servers:  
-  #Dagger
-  release_url: https://cors-anywhere.herokuapp.com/http://servers.lunamultiplayer.com:8701/json
-  debug_url: https://cors-anywhere.herokuapp.com/http://servers.lunamultiplayer.com:8751/json
-  #Tekbot
+  # Dagger
+  #release_url: https://cors-anywhere.herokuapp.com/http://servers.lunamultiplayer.com:8701/json
+  #debug_url: https://cors-anywhere.herokuapp.com/http://servers.lunamultiplayer.com:8751/json
+  # Tekbot
   #release_url: https://cors-anywhere.herokuapp.com/http://212.48.114.221:8701/json
   #debug_url: https://cors-anywhere.herokuapp.com/http://212.48.114.221:8751/json
-  #Angryjoshi
+  # Angryjoshi
   #release_url: https://cors-anywhere.herokuapp.com/http://lmp.anschuetznet.de:8701/json
   #debug_url: https://cors-anywhere.herokuapp.com/http://lmp.anschuetznet.de:8751/json
+  # DasSkelett
+  release_url: https://cors-anywhere.herokuapp.com/https://ms.lmp.dasskelett.dev/json
+  debug_url: https://cors-anywhere.herokuapp.com/https://ms-nightly.lmp.dasskelett.dev/json
+  # Nightshade
+  #release_url: https://cors-anywhere.herokuapp.com/https://lmp.nightshade.fun/json
+  #debug_url: https://cors-anywhere.herokuapp.com/https://lmp.nightshade.fun/nightly/json
